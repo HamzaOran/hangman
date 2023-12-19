@@ -77,12 +77,10 @@ function App() {
         alignItems: 'center',
         background: 'darkgoldenrod',
         justifyContent: 'center',
+        fontSize: '3rem',
       }}
     >
-      <div style={{ fontSize: '2rem', textAlign: 'center' }}>
-        {isWinner && "You're the WİNNER"}
-        {isLoser && "You've LOST"}
-      </div>
+      <div style={{ fontSize: '2rem', textAlign: 'center' }}></div>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord
         reveal={isLoser}
@@ -103,6 +101,8 @@ function App() {
           addGuessedLetter={addGuessedLetter}
         />
       </div>
+      {isWinner && "You're the WİNNER"}
+      {isLoser && "You've LOST"}
     </div>
   );
 }
