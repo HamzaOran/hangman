@@ -69,12 +69,14 @@ function App() {
   return (
     <div
       style={{
-        maxWidth: '800px',
+        maxWidth: '400px',
         display: 'flex',
         flexDirection: 'column',
         gap: '2rem',
         margin: '0 auto',
         alignItems: 'center',
+        background: 'darkgoldenrod',
+        justifyContent: 'center',
       }}
     >
       <div style={{ fontSize: '2rem', textAlign: 'center' }}>
